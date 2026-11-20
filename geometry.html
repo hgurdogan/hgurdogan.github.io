@@ -26,8 +26,10 @@
 
   <section class="geometry-notes">
     <h2>Reading the sphere</h2>
-    <p>The three orange great-circle arcs join the population direction <i>B</i>, its estimate <i>H</i>, and the reference direction <i>z</i>. On the unit sphere, the length of each arc equals the angle between its endpoints, measured in radians.</p>
-    <p>The dotted circle passes through <i>B</i> and contains all directions making the same angle with <i>z</i> as <i>B</i> does. The dark geodesic from <i>B</i> meets the great circle through <i>H</i> and <i>z</i> at a right angle at <i>H</i><sup>∗</sup>.</p>
+    <p>In a multifactor model, the population factor loadings span a subspace <i>B</i>. Principal component analysis (PCA) gives us an estimate <i>H</i> of that subspace. The figure shows the one-factor case, where each can be drawn as a unit direction. Think of <i>z</i>, a unit direction chosen in advance, as the north pole. If <i>z</i> carries information about <i>B</i>, the latitude of <i>B</i> stays away from the equator as the dimension grows. The dotted circle marks that latitude.</p>
+    <p>Starting at <i>H</i>, how far should we move toward <i>z</i>? In the figure, the best stopping point is <i>H</i><sup>*</sup>, the point on their great circle closest to <i>B</i>. To construct it, project <i>B</i> orthogonally onto the plane spanned by <i>H</i> and <i>z</i>, then scale the projection to unit length. The right angle marks where the arc from <i>B</i> meets the great circle.</p>
+    <p>In a Euclidean triangle, Stewart’s theorem lets us use the three side lengths to locate the foot of an altitude. On the unit sphere, the three side lengths are the angles between <i>B</i>, <i>H</i>, and <i>z</i>. They determine where <i>H</i><sup>*</sup> lies. We can measure the angle between <i>H</i> and <i>z</i> directly. The statistical problem is to estimate the two angles involving the unobserved <i>B</i>.</p>
+    <p>Alex Shkolnik and I develop the multifactor correction in <a href="https://arxiv.org/abs/2410.03053"><cite>The Quadratic Optimization Bias of Large Covariance Matrices</cite></a>.</p>
     <p class="geometry-caption">The coordinates are illustrative.</p>
   <p><a href="/geometry/eigenvector-geometry.svg" download="eigenvector-geometry.svg">Download figure (SVG)</a></p>
   </section></div>
