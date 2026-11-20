@@ -1,0 +1,25 @@
+.sphere-figure { min-width: 0; margin: 0; text-align: center; }
+.sphere-figure img { display: block; width: 100%; height: auto; }
+.geometry-notes a { color: #22586a; text-decoration: underline; text-underline-offset: .2em; }
+.geometry-caption { font-size: .925rem; color: #485b64; }
+.geometry-page { width: min(1150px, 100%); margin: 0 auto; padding: clamp(2rem, 5vw, 5rem) clamp(1rem, 3vw, 2rem); }
+.geometry-page h1 { font-size: clamp(2.5rem, 5vw, 4.4rem); }
+.geometry-layout { display: grid; grid-template-columns: 1.6fr 1fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: center; }
+.geometry-notes h2 { font-size: 2rem; line-height: 1.2; }
+@media (max-width: 760px) { .geometry-layout { grid-template-columns: 1fr; } }
+
+.profile-page { display: flex; flex-direction: column; background: #f1f6f7; }
+.profile-column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 48rem;
+  margin-inline: auto;
+  padding: clamp(2rem, 4vw, 3.75rem) clamp(1.35rem, 4vw, 2rem) 1.4rem;
+}
+.profile-column h1 { font-size: clamp(2.8rem, 6vw, 4.75rem); margin-bottom: .65rem; }
+.profile-column p { margin: 0 0 .85rem; font-size: 1.06rem; color: #415563; line-height: 1.65; }
+.profile-column .hero-links { margin-top: 1.2rem; }
+.profile-column .sphere-figure { width: min(100%, 27.25rem); padding-top: 1.55rem; margin: auto auto 0; }
+.profile-column .sphere-figure a { display: block; }
