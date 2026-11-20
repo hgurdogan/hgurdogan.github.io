@@ -1,0 +1,74 @@
+.teaching-page .page-body > section {
+  margin: 0;
+  scroll-margin-top: 2rem;
+}
+.teaching-page .page-body > section + section {
+  margin-top: 3.5rem;
+}
+.teaching-page section > p,
+.evaluation-content > p {
+  color: #415563;
+  font-size: 1.07rem;
+  line-height: 1.72;
+  margin: 0 0 1rem;
+}
+.evaluation-content p:last-child { margin-bottom: 0; }
+.teaching-page .course { align-items: baseline; }
+.teaching-page .course .term {
+  flex: 0 0 38%;
+  white-space: normal;
+  text-align: right;
+}
+.teaching-page .earlier-teaching { margin-top: 1.3rem; }
+.evaluation-details {
+  border-block: 1px solid var(--line);
+  margin-top: 1.3rem;
+}
+.evaluation-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--blue);
+  padding: .85rem .15rem;
+}
+.evaluation-details summary:focus-visible,
+.evaluation-scroll:focus-visible {
+  outline: 2px solid var(--blue);
+  outline-offset: 2px;
+}
+.evaluation-content { padding: .4rem 0 1.3rem; }
+.evaluation-scroll { overflow-x: auto; }
+.evaluation-content table {
+  width: 100%;
+  min-width: 32rem;
+  border-collapse: collapse;
+  font-size: .94rem;
+  font-variant-numeric: tabular-nums;
+}
+.evaluation-content caption {
+  text-align: left;
+  font-weight: 600;
+  margin: .5rem 0;
+}
+.evaluation-content th,
+.evaluation-content td {
+  text-align: left;
+  padding: .6rem .75rem;
+  border-bottom: 1px solid var(--line);
+}
+.evaluation-content thead { background: #f1f6f7; }
+.evaluation-content tbody th { white-space: nowrap; }
+.evaluation-content th small,
+.evaluation-content th span {
+  display: block;
+  font-weight: normal;
+  font-size: .875rem;
+  color: var(--muted);
+}
+.evaluation-content .evaluation-note {
+  font-size: .94rem;
+  margin-top: .8rem;
+}
+.evaluation-content sup a { text-decoration: underline; }
+@media (max-width: 760px) {
+  .teaching-page .course .term { text-align: left; }
+}

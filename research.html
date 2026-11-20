@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Research on high-dimensional inference, portfolio optimization, eigenvector shrinkage, breakpoint detection, and lead–lag detection.">
+  <title>Research | Hubeyb Gurdogan</title>
+  <link rel="stylesheet" href="/style.css">
+  
+</head>
+<body id="top">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="/">Hubeyb Gurdogan<span>Mathematics · UCLA</span></a>
+      <nav aria-label="Main navigation"><a href="/">About</a> <a href="/research.html" aria-current="page">Research</a> <a href="/teaching.html">Teaching</a> <a href="/math-circle.html">Math Circle</a> <a href="/contact.html">Contact</a></nav>
+    </div>
+  </header>
+  <main id="main"><header class="page-intro"><div><h1>Research</h1><p>I study what we can learn from high-dimensional data when observations are scarce, and how that information can guide decisions.</p></div></header><div class="page-columns"><nav class="contents-nav" aria-label="On this page"><span>On this page</span><a href="#estimability">Estimability</a><a href="#optimization">Portfolio optimization</a><a href="#shrinkage">Eigenvector shrinkage</a><a href="#breakpoints">Breakpoint detection</a><a href="#lead-lag">Lead–lag detection</a><a href="#supply-chain-risk">Supply-chain risk</a><a href="#selected-work">Selected work</a></nav><div class="page-body"><article class="area" id="estimability"><h2>What can be estimated in high dimensions?</h2><p>Suppose we observe thousands of variables on just a few dates. If several factors drive those variables, how much can we learn about their directions? In joint work with Alex Shkolnik on spiked covariance models, we show that even as the number of variables grows, the alignment matrix between sample and population eigenvectors generally cannot be estimated consistently when the number of observations stays fixed. We identify geometric quantities that can be estimated, including how much of a sample direction lies in the population signal space.</p></article><article class="area" id="optimization"><h2>Covariance estimation and portfolio optimization</h2><p>A minimum-variance portfolio can appear to carry very little risk because the optimizer puts weight on directions where risk has been underestimated. I study which errors in an estimated covariance matrix matter most for the portfolio it produces. With Lisa Goldberg and Alec Kercheval, I showed how to use a strategy’s linear constraints to adjust the leading sample eigenvector and remove the leading optimization bias under our factor model. One question I am pursuing is how to make such a correction when portfolio weights must be nonnegative.</p></article><article class="area" id="shrinkage"><h2>Eigenvector shrinkage</h2><p>What information helps us estimate the direction of a common factor? With Alec Kercheval, I developed Multiple Anchor Point Shrinkage (MAPS), which moves the leading sample eigenvector toward a subspace chosen using prior information. In our single-factor model, uniformly random anchor directions give no asymptotic improvement. Knowing the ordering of groups of factor loadings, even without knowing the values or the ordering within each group, can suffice for consistent estimation.</p></article><article class="area" id="breakpoints"><h2>Breakpoint detection in factor models</h2><p>I study how precisely we can date a change in the factors driving a panel of time series. In work with Alec Kercheval and Georg Menz, we compare the estimated factor spaces on either side of each candidate date. Under our model, correcting for noise in those estimates lets us recover the exact date as the number of series grows, even with a fixed number of observations per series. In complementary work with Georg Menz, we establish a sharp signal-to-noise threshold for consistent estimation of the break fraction using ridge-regularized quasi-maximum likelihood.</p></article><article class="area" id="lead-lag"><h2>Lead–lag detection in high-dimensional time series</h2><p>I have recently become interested in what happens when a common movement reaches different series at different times. For example, several groups of series may follow the same underlying factor, each with its own delay. I am exploring how to identify those groups and estimate their relative delays when the panel contains many series but only a short history for each.</p></article><article class="area" id="supply-chain-risk">
+  <h2>Supply-chain risk with Swiss Re Institute</h2>
+  <p>If an earthquake shuts down a supplier’s factory, how much production can a customer lose even when its own facilities are undamaged? As the research lead at UC Berkeley, I developed a mathematical model that traces a disruption through a network of suppliers and production sites. Working with Swiss Re Institute and One Concern, I also helped identify the data needed to put the model to use, including how shipping records could reveal which inputs a factory depends on. The work helped inform the development of tools for assessing business-interruption risk.</p>
+  <ul class="project-sources">
+    <li><a href="https://cdar.econ.berkeley.edu/publications/2022-2-propagation-model-quantify-business-interruption-losses-supply-chain-networks.html">A propagation model to quantify business interruption losses in supply chain networks</a></li>
+    <li><a href="https://www.swissre.com/institute/research/topics-and-risk-dialogues/economy-and-insurance-outlook/complex-supply-chains.html">Swiss Re Institute industry report</a></li>
+  </ul>
+</article>
+<section id="selected-work" class="paper-list">
+  <h2 id="publications">Selected work</h2>
+  <article id="eigenvector-alignment" class="publication">
+    <span>2026</span>
+    <div>
+      <a href="https://arxiv.org/abs/2609.23081">Recovery Limits for Eigenvector Alignment in HDLSS Spiked Covariance Models</a>
+      <p>Hubeyb Gurdogan and Alex Shkolnik · Preprint, arXiv:2609.23081</p>
+    </div>
+  </article>
+  <article id="qml-breakpoint" class="publication">
+    <span>2026</span>
+    <div>
+      <a href="https://arxiv.org/abs/2609.12271">A Sharp Signal-to-Noise Threshold for Quasi-Maximum Likelihood Breakpoint Estimation</a>
+      <p>Hubeyb Gurdogan and Georg Menz · Preprint, arXiv:2609.12271</p>
+    </div>
+  </article>
+  <article id="directional-breakpoint" class="publication">
+    <span>2026</span>
+    <div>
+      <strong>Estimating a Directional Regime-Switching Breakpoint in High-Dimensional Factor Models</strong>
+      <p>Hubeyb Gurdogan, Alec N. Kercheval, and Georg Menz · Manuscript in preparation</p>
+    </div>
+  </article>
+  <article id="quadratic-optimization-bias" class="publication">
+    <span>2026</span>
+    <div>
+      <strong>The Quadratic Optimization Bias of Large Covariance Matrices</strong>
+      <p>Hubeyb Gurdogan and Alex Shkolnik · Revised manuscript</p>
+      <p class="recording"><a href="https://arxiv.org/abs/2410.03053">Original 2024 preprint · arXiv:2410.03053</a></p>
+    </div>
+  </article>
+  <article id="humanitys-last-exam" class="publication">
+    <span>2026</span>
+    <div>
+      <a href="https://doi.org/10.1038/s41586-025-09962-4">A benchmark of expert-level academic questions to assess AI capabilities</a>
+      <p>Hubeyb Gurdogan, member of the HLE Contributors Consortium · <em>Nature</em> 649, 1139–1146</p>
+    </div>
+  </article>
+<article id="strategy-specific" class="publication"><span>2025</span><div><a href="https://cdar.berkeley.edu/sites/default/files/publications/portfolio_optimization_via_strategy-specific_eigenvector_shrinkage.pdf">Portfolio optimisation via strategy-specific eigenvector shrinkage</a><p>Lisa R. Goldberg, Hubeyb Gurdogan, and Alec N. Kercheval · <em>Finance and Stochastics</em> 29, 665–706</p><p class="recording"><a href="https://www.youtube.com/watch?v=8ABNRinea-8">Watch on YouTube · Bias reduction in optimized portfolios through MAPS</a><br>UC Berkeley CDAR Risk Seminar · April 5, 2022</p></div></article>
+<article id="portfolio-selection" class="publication"><span>2025</span><div><a href="https://link.springer.com/article/10.1007/s10479-024-06340-7">Portfolio selection revisited</a><p>Alex Shkolnik, Alec N. Kercheval, Hubeyb Gurdogan, Lisa R. Goldberg, and Haim Bar · <em>Annals of Operations Research</em> 346, 137–155</p></div></article>
+<article id="maps" class="publication"><span>2022</span><div><a href="https://doi.org/10.1137/21M1446411">Multiple anchor point shrinkage for the sample covariance matrix</a><p>Hubeyb Gurdogan and Alec N. Kercheval · <em>SIAM Journal on Financial Mathematics</em> 13, 1112–1143</p><p class="recording"><a href="https://www.youtube.com/watch?v=BFbxKfpLRFo">Watch on YouTube · Multi-Anchor Point Shrinkage for Better Betas</a><br>UC Berkeley CDAR Risk Seminar · December 1, 2020</p></div></article>
+<article id="krammer" class="publication"><span>2018</span><div><strong>A polynomial invariant for plane curve complements: Krammer polynomials</strong><p><em>Journal of Singularities</em></p></div></article></section></div></div></main>
+  <footer><span>© 2026 Hubeyb Gurdogan</span><a href="#top">Back to top</a></footer>
+</body>
+</html>
